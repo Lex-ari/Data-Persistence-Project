@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -7,7 +8,7 @@ using UnityEngine.UI;
 public class MenuUIHandler : MonoBehaviour
 {
 
-    public InputField usernameInput;
+    public TMP_InputField usernameInput;
 
     // Start is called before the first frame update
     private void Start()

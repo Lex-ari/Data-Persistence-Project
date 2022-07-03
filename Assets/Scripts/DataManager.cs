@@ -9,6 +9,8 @@ public class DataManager : MonoBehaviour
     public static DataManager Instance;
 
     public string username;
+
+	public string highUsername;
     public int highScore;
 
 	private void Awake() {
@@ -39,7 +41,7 @@ public class DataManager : MonoBehaviour
 		if (File.Exists(path)) {
 			string json = File.ReadAllText(path);
 			SaveData data = JsonUtility.FromJson<SaveData>(json);
-			username = data.username;
+			highUsername = data.username;
 			highScore = data.highScore;
 		}
 	}
